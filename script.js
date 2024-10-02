@@ -141,7 +141,7 @@ if ('webkitSpeechRecognition' in window) {
         let transcript = event.results[event.resultIndex][0].transcript.trim();
         document.getElementById("chat-input").value = transcript;
         let message = transcript; // Captured message
-        document.getElementById('chat-output').innerHTML += `<p>User: ${message}</p>`;
+        //document.getElementById('chat-output').innerHTML += `<p>User: ${message}</p>`;
 
         // Clear any existing pause timer
         clearTimeout(pauseTimer);
